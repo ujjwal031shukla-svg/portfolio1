@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Ansh Shukla, C and Java programmer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <div class="bar-inner">
+        <a class="logo" href="#top"
+          ><span class="mono">AS</span
+          ><span class="logo-name">Ansh Shukla</span></a
+        >
+        <nav aria-label="Main">
+          <a href="#projects">Projects</a>
+          <a href="#toolbox">Toolbox</a>
+          <a href="#journey">Journey</a>
+          <a class="say-hi" href="#contact">Say hello</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap">
+        <div class="hero-copy">
+          <p class="status">
+            <span class="dot"></span>Learning DSA in Java, HTML and CSS
+          </p>
+          <h1>
+            Hi, I’m Ansh. I write small programs in <span class="mark">C</span>,
+            and now websites too.
+          </h1>
+          <p class="lead">
+            I started programming in 2025 with C, Java and Python. So far I’ve
+            built a banking system, a password manager and a digital voting
+            machine. This year I began learning data structures and algorithms
+            in Java, along with HTML and CSS.
+          </p>
+          <div class="actions">
+            <a class="btn solid" href="#projects">See my projects</a>
+            <a class="btn line" href="#contact">Email me</a>
+          </div>
+        </div>
+
+        <aside class="now" aria-label="Quick facts">
+          <h2>At a glance</h2>
+          <dl>
+            <div>
+              <dt>Languages</dt>
+              <dd>C, Java, Python</dd>
+            </div>
+            <div>
+              <dt>Learning now</dt>
+              <dd>DSA in Java, HTML and CSS</dd>
+            </div>
+            <div>
+              <dt>Latest project</dt>
+              <dd>Digital Voting Machine</dd>
+            </div>
+            <div>
+              <dt>Code</dt>
+              <dd>3 projects on GitHub</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="wrap" id="projects">
+        <input class="pick" type="radio" name="show" id="all" checked />
+        <input class="pick" type="radio" name="show" id="c" />
+        <input class="pick" type="radio" name="show" id="web" />
+
+        <div class="head">
+          <h2>Projects</h2>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <label for="all">Everything</label>
+            <label for="c">C programs</label>
+            <label for="web">Web project</label>
+          </div>
+        </div>
+
+        <ul class="list">
+          <li class="proj featured" data-type="web">
+            <div
+              class="shot vote"
+              role="img"
+              aria-label="Sketch of a voting screen with candidate rows and vote buttons"
+            ></div>
+            <div class="body">
+              <h3>Digital Voting Machine</h3>
+              <p>
+                A voting machine project that began as a Python desktop app and
+                now also has a web version, a server and tests.
+              </p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Tkinter</li>
+                <li>Web version</li>
+                <li>Server</li>
+                <li>Tests</li>
+              </ul>
+              <p class="repo">
+                <a
+                  href="https://github.com/ujjwal031shukla-svg/Digital-voting-Machine"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View code on GitHub</a
+                >
+              </p>
+              <details>
+                <summary></summary>
+                <ul>
+                  <li>
+                    <b>First version:</b> A desktop app in Python Tkinter, kept
+                    in the archive folder of the repository.
+                  </li>
+                  <li>
+                    <b>Now:</b> The repository has a web version (dvm-web), a
+                    server, a tests folder and a written project report.
+                  </li>
+                  <li>
+                    <b>Why it matters to me:</b> It is my biggest project so
+                    far, and the first one where I split the work into separate
+                    parts.
+                  </li>
+                </ul>
+              </details>
+            </div>
+          </li>
+
+          <li class="proj" data-type="c">
+            <div class="shot term">
+              <pre>
+--- Mini Banking System ---
+1. Create Account
+2. Deposit
+3. Withdraw
+4. Check Balance
+5. Delete Account
+6. List All Accounts
+7. Exit</pre
+              >
+            </div>
+            <div class="body">
+              <h3>Mini Banking System</h3>
+              <p>
+                A console banking program in C. You can create accounts,
+                deposit, withdraw, check a balance and delete accounts, and
+                everything is saved in a file.
+              </p>
+              <ul class="tags">
+                <li>C</li>
+                <li>File handling</li>
+                <li>Menu-driven</li>
+              </ul>
+              <p class="repo">
+                <a
+                  href="https://github.com/ujjwal031shukla-svg/Mini-Banking-System-in-C"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View code on GitHub</a
+                >
+              </p>
+              <details>
+                <summary></summary>
+                <ul>
+                  <li>
+                    <b>How it works:</b> Account data is written to a binary
+                    file (accounts.dat), so it is still there the next time you
+                    run the program.
+                  </li>
+                  <li>
+                    <b>Safety checks:</b> It refuses negative deposits and
+                    withdrawals, and checks the balance before a withdrawal.
+                  </li>
+                  <li>
+                    <b>Limits I know about:</b> It supports 5 accounts, and
+                    names can’t have spaces yet.
+                  </li>
+                  <li>
+                    <b>Next steps:</b> Dynamic memory for unlimited accounts,
+                    transaction history, and splitting the code into several
+                    files.
+                  </li>
+                </ul>
+              </details>
+            </div>
+          </li>
+
+          <li class="proj" data-type="c">
+            <div class="shot term">
+              <pre>
+Master password: ******
+Login successful
+
+1. Add credential
+2. View credentials
+3. Delete credential
+4. Exit</pre
+              >
+            </div>
+            <div class="body">
+              <h3>C Password Manager</h3>
+              <p>
+                A command-line password manager in C. It asks for a master
+                password, then lets you add, view and delete saved logins.
+              </p>
+              <ul class="tags">
+                <li>C</li>
+                <li>XOR encryption</li>
+                <li>Binary files</li>
+              </ul>
+              <p class="repo">
+                <a
+                  href="https://github.com/ujjwal031shukla-svg/c-password-manager"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >View code on GitHub</a
+                >
+              </p>
+              <details>
+                <summary></summary>
+                <ul>
+                  <li>
+                    <b>How it works:</b> The master password and the saved
+                    logins are stored in binary files, encrypted with a simple
+                    XOR method. Typed passwords show as stars.
+                  </li>
+                  <li>
+                    <b>Honest note:</b> XOR is good for learning but not strong
+                    security, so I don’t use it for real passwords.
+                  </li>
+                  <li>
+                    <b>Next steps:</b> Search by site name, a password
+                    generator, and stronger encryption such as AES.
+                  </li>
+                </ul>
+              </details>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="wrap" id="toolbox">
+        <h2>Toolbox</h2>
+        <div class="groups">
+          <div class="group">
+            <h3>Languages</h3>
+            <ul class="chips">
+              <li>C</li>
+              <li>Java</li>
+              <li>Python</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>Learning now</h3>
+            <ul class="chips">
+              <li>DSA in Java</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="group">
+            <h3>Used in my projects</h3>
+            <ul class="chips">
+              <li>File handling</li>
+              <li>Structs</li>
+              <li>Menu-driven programs</li>
+              <li>XOR encryption</li>
+              <li>Git and GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap" id="journey">
+        <h2>Journey</h2>
+        <ol class="timeline">
+          <li>
+            <span class="year">2025</span>
+            <p>
+              Started learning C, Java and Python. Built my first projects in C:
+              the Mini Banking System and the password manager.
+            </p>
+          </li>
+          <li>
+            <span class="year">2026</span>
+            <p>
+              Started learning data structures and algorithms in Java, and HTML
+              and CSS. The Digital Voting Machine grew a web version.
+            </p>
+          </li>
+          <li class="next">
+            <span class="year">Next</span>
+            <p>
+              Keep building projects, get stronger at DSA, and make this
+              portfolio better with every project I add.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="wrap contact" id="contact">
+        <div class="contact-copy">
+          <h2>Say hello</h2>
+          <p>
+            If you want to talk about a project, a bug, or something I could
+            learn next, write to me.
+          </p>
+          <p class="mail">
+            <a href="mailto:ujjwal031shukla@gmail.com"
+              >ujjwal031shukla@gmail.com</a
+            >
+          </p>
+          <ul class="links">
+            <li>
+              <a
+                href="https://github.com/ujjwal031shukla-svg"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ansh-shukla-15354028a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <form
+          class="card"
+          action="mailto:ujjwal031shukla@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="field">
+            <input
+              type="text"
+              id="n"
+              name="name"
+              placeholder=" "
+              required
+            /><label for="n">Your name</label>
+          </div>
+          <div class="field">
+            <input
+              type="email"
+              id="e"
+              name="email"
+              placeholder=" "
+              required
+            /><label for="e">Your email</label>
+          </div>
+          <div class="field">
+            <textarea
+              id="m"
+              name="message"
+              rows="4"
+              placeholder=" "
+              required
+            ></textarea
+            ><label for="m">What would you like to say?</label>
+          </div>
+          <button class="btn solid" type="submit">Send message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="wrap foot">
+      <span>© 2026 Ansh Shukla</span><a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>
